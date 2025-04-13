@@ -13,7 +13,7 @@ CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Initialize Gemini AI model
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyAPXeMIfmyZb1pNNrqsOfQtsDIMulny_5U')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'Your_Gemini_api_key')
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
